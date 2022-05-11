@@ -22,7 +22,7 @@
             <!--Nav -->
             <div id="head">
                 <a href="index.php?mod=home">Home</a>
-                <a href="index.php?mod=products">Products</a>
+                <a href="index.php?mod=add_posts">Add Post</a>
                 <a href="index.php?mod=join">Sign up</a>
                 <a href="index.php?mod=login">Sign in</a>
             </div>
@@ -37,7 +37,7 @@
             <div id="top-footer">
                 <ul>
                     <li><a href="index.php?mod=home">Home</a></li>
-                    <li><a href="index.php?mod=products">Products</a></li>
+                    <li><a href="index.php?mod=add_posts">Add Post</a></li>
                     <li><a href="index.php?mod=join">Join</a></li>
                     <li><a href="index.php?mod=login">Login</a></li>
                 </ul>

@@ -12,9 +12,9 @@ switch($_GET['mod'])
 		include 'modules/home.php';
 		break;
 	}
-	case 'posts':
+	case 'add_posts':
 	{
-		include 'modules/posts.php';
+		include 'modules/add_posts.php';
 		break;
 	}
 	case 'join':
