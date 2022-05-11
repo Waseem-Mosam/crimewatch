@@ -17,7 +17,7 @@
 	$f->addElement($d);
 	$f->addTextBox('desc', 'Description');
 	$f->setSubmitLabel('Add crime post');
-	$f->setAction('index.php?mod=posts');
+	$f->setAction('index.php?mod=add_posts');
 	$form_text=$f->tooString();
 	
 	
