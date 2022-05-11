@@ -2,6 +2,8 @@
 //CONTROLLER FILE
 //include config file
 require_once 'config.inc.php';
+//include("modules/connection.php");
+//require_once("modules/functions.php");
 
 switch($_GET['mod'])
 {
@@ -10,9 +12,9 @@ switch($_GET['mod'])
 		include 'modules/home.php';
 		break;
 	}
-	case 'products':
+	case 'posts':
 	{
-		include 'modules/products.php';
+		include 'modules/posts.php';
 		break;
 	}
 	case 'join':

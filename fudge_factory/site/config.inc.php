@@ -3,8 +3,8 @@
 //VIEW
 require_once('classes/view/Page.php');
 //ENTITIES
-require_once('classes/entities/Medium.php');
-require_once('classes/entities/Inventory.php');
+//require_once('classes/entities/Medium.php');
+//require_once('classes/entities/Inventory.php');
 //SUPPORT
 require_once('classes/support/Form.php');
 require_once('classes/support/Textbox.php');

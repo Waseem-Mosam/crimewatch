@@ -1,7 +1,7 @@
 <?php
 //PRODUCTS MODULE
 //Displays all the available products
-
+	
 	include("connection.php");
 	
 	//Construct membership form
@@ -86,7 +86,7 @@
 		//display the form
 		$p=new Page('Join us');
 		$p->setHeading('Please complete the form, <b>all fields are compulsary</b>.');
-		$p->setContent($text.'Please complete the form below<p/>'.$form_text);
+		$p->setContent('Please complete the form below<p/><br/>'.$form_text);
 		$p->printIt();
 	}
 	

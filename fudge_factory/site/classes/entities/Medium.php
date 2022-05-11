@@ -1,5 +1,5 @@
 <?php
-
+include("modules/connection.php");
 class Medium
 {
 	private $id;
@@ -9,11 +9,10 @@ class Medium
 	function __construct($id)
 	{
 		$this->id=$id;
-		$dbc=mysql_connect(DB_HOST,DB_USER,DB_PASSWORD) or die('Failed'.mysql_error());
-		mysql_select_db(DB_NAME);
+		
 		$query='SELECT * FROM MEDIUM WHERE medium_id='.$id;
-		$result=mysql_query($query);
-			while($row=mysql_fetch_array($result))
+		$result=mysqli_query($con,$query);
+			while($row=mysqli_fetch_array($result))
 				{
 				$this->description=$row['description'];
 				$this->price=$row['price'];

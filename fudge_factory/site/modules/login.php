@@ -1,8 +1,8 @@
 <?php
-
+session_start();
 
 include("connection.php");
-include("functions.php");
+//include("functions.php");
 
 $lf=new Form('login_form');
 $lf->addTextBox('email','E-Mail');
@@ -20,12 +20,14 @@ if(isset($_POST['submitted']))
 		$query="SELECT first_name FROM members WHERE (email='".$_POST['email']."') AND (password='".md5($_POST['password'])."')";
 		 
 		$result=mysqli_query($con, $query);
+		
 		if(mysqli_num_rows($result)==1)
 		{
 			$p=new Page('Log In');
 			$p->setHeading('Welcome back');
 			$p->setContent('');
 			$p->printIt();
+			$_SESSION['user_id']=$result;
 		}
 		else
 		{

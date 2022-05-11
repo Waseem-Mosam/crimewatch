@@ -3,11 +3,11 @@
 function check_login($con)
 {
 
-	if(isset($_SESSION['email']))
+	if(isset($_SESSION['user_id']))
 	{
 
-		$id = $_SESSION['email'];
-		$query = "select * from members where email = '$id' limit 1";
+		$id = $_SESSION['user_id'];
+		$query = "select * from members where first_name = '$id' limit 1";
 
 		$result = mysqli_query($con,$query);
 		if($result && mysqli_num_rows($result) > 0)
