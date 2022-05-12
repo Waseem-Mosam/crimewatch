@@ -17,6 +17,11 @@ switch($_GET['mod'])
 		include 'modules/add_posts.php';
 		break;
 	}
+	case 'posts':
+		{
+			include 'modules/posts.php';
+			break;
+		}
 	case 'join':
 	{
 		include 'modules/join.php';

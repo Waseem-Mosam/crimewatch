@@ -23,6 +23,7 @@
             <div id="head">
                 <a href="index.php?mod=home">Home</a>
                 <a href="index.php?mod=add_posts">Add Post</a>
+                <a href="index.php?mod=posts">Posts</a>
                 <a href="index.php?mod=join">Sign up</a>
                 <a href="index.php?mod=login">Sign in</a>
             </div>
@@ -38,6 +39,7 @@
                 <ul>
                     <li><a href="index.php?mod=home">Home</a></li>
                     <li><a href="index.php?mod=add_posts">Add Post</a></li>
+                    <li><a href="index.php?mod=posts">Posts</a></li>
                     <li><a href="index.php?mod=join">Join</a></li>
                     <li><a href="index.php?mod=login">Login</a></li>
                 </ul>
